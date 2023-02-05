@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Gp.Test.Api.DTO/obj
+/Gp.Test.Api.DTO/bin
+/.vs/GP.Test/FileContentIndex
+/Gp.Test.Apis/obj
+/Gp.Test.Apis/bin
+/Gp.Test.Entity/obj
+/Gp.Test.Entity/bin
+/Gp.Test.Repository/obj
+/Gp.Test.Repository/bin/Debug/net6.0
+/GpTest.Interface/obj
+/GpTest.Interface/bin
+/.vs/GP.Test/v17/.suo
