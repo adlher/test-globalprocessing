@@ -13,9 +13,9 @@ namespace Gp.Test.Repository
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            new PersonasConfig(builder.Entity<Personas>());
+            new PersonaConfig(builder.Entity<Persona>());
         }
 
-        public DbSet<Personas> Personas { get; set; } = default!;
+        public DbSet<Persona> Personas { get; set; } = default!;
     }
 }

@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<TestContext>(test => test.UseInMemoryDatabase(databaseName: "Test"));
-//builder.Services.AddTransient(typeof(ITestRepository), typeof(TestRepository));
+builder.Services.AddTransient<ITestRepository, TestRepository>();
 var app = builder.Build();
 var dataTest = System.IO.File.ReadAllText(@"Test.json");
 ConfigDomain.ConfigurationDomain(app.Services, dataTest);

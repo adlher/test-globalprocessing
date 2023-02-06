@@ -4,6 +4,9 @@ namespace Gp.Test.Interface.Repositories
 {
     public interface ITestRepository
     {
-        ICollection<Personas>? GetAll();
+        IQueryable<Persona>? GetAll();
+        Task<Persona?> GetById(Guid id);
+        Task<Persona> Insert(Persona persona);
+        Task<Persona> Update(Persona persona);
     }   
 }

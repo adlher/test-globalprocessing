@@ -1,7 +1,7 @@
 ﻿namespace Gp.Test.Entity
 {
     using System.ComponentModel.DataAnnotations;
-    public class Personas
+    public class Persona
     {
         [Key]
         public Guid Id { get; set; }
@@ -10,5 +10,6 @@
         public string? Domicilio { get; set; }
         public string? Telefono { get; set; }
         public string? Profesion { get; set; }
+        public string? DNI { get; set; }
     }
 }

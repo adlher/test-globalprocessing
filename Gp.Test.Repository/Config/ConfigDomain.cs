@@ -9,7 +9,7 @@ namespace Gp.Test.Repository.Config
         public static void ConfigurationDomain(IServiceProvider serviceProvider, string jsonData)
         {
             JsonSerializerSettings settings = new JsonSerializerSettings();
-            List<Personas>? endPointItems = JsonConvert.DeserializeObject<List<Personas>>(jsonData, settings);
+            List<Persona>? endPointItems = JsonConvert.DeserializeObject<List<Persona>>(jsonData, settings);
 
             using (var serviceScope = serviceProvider.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {

@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Gp.Test.Repository.Config
 {
-    public class PersonasConfig
+    public class PersonaConfig
     {
-        public PersonasConfig(EntityTypeBuilder<Personas> entityBuilder)
+        public PersonaConfig(EntityTypeBuilder<Persona> entityBuilder)
         {
             entityBuilder.HasKey(x => new { x.Id });
             entityBuilder.Property(x => x.NombreCompleto);
@@ -13,6 +13,7 @@ namespace Gp.Test.Repository.Config
             entityBuilder.Property(x => x.Domicilio);
             entityBuilder.Property(x => x.Telefono);
             entityBuilder.Property(x => x.Profesion);
+            entityBuilder.Property(x => x.DNI);
         }
     }
 }
